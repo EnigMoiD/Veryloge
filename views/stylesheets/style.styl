@@ -1,0 +1,21 @@
+@import 'nib'
+
+global-reset()
+
+// Mixins
+
+a-color(color)
+	a
+		text-decoration none
+		color color
+		:hover
+			color color
+		:visited
+			color color
+		:highlighted
+			color color
+
+margin-not(margin, except)
+	margin margin
+	margin-{except} 0
+
