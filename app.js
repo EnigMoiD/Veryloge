@@ -25,10 +25,12 @@ function compile(str, path) {
 		.use(nib());
 }
 
+// Routes
+
 app.get('/', function (req, res) {
 	res.render('index', {
 		title : 'Home'
-	})
+	});
 });
 
 app.listen(8080);
